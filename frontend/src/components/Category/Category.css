@@ -1,0 +1,30 @@
+.Category-title {
+    color: var(--theme-body-txt);
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    margin-top: 0.6rem;
+    text-align: right;
+    list-style: none;
+
+}
+
+
+.Category-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+
+
+
+
+.Category-link {
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color ease-in 0.1s;
+}
+
