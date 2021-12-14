@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './style.css'
-import { Link, useLocation } from 'wouter'
+import { useLocation } from 'wouter'
 import GifList from 'components/GifList'
 import useGifs from 'hooks/useGifs'
 import TrendingSearches from 'components/TrendingSearches'
@@ -10,6 +10,8 @@ export default function Home() {
     const [keyword, setKeyword] = useState('')
     const [path, pushLocation] = useLocation()
     const {loading, gifs} = useGifs()
+
+    console.log(path);
 
 
     const handleSubmit = (e) => {

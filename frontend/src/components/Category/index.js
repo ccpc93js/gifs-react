@@ -11,11 +11,10 @@ import "./Category.css";
 export default function Category({ name, options = [] }) {
   return (
     <div className="Category">
-      <h3>{name}</h3>
-      <ul className="Category-title">
+      <h3 className="Category-title">{name}</h3>
+      <ul className="Category-list">
         {options.map((singleOption) => (
-          <li className="Category-title"
-            key={singleOption.id}
+          <li key={singleOption.id}
           >
             <Link className="Category-link" 
             to={`/search/${singleOption.title}`}>
