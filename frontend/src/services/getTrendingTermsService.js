@@ -8,7 +8,7 @@ const fromApiResponseToGifs = (apiResponse) => {
 
 
 export default async function  getTrendingTerms() {
-    const apiURL = `${API_URL}/gifs/trending?api_key=${API_KEY}`
+    const apiURL = `${API_URL}/gifs/trending?api_key=${API_KEY}&limit=15&rating=g`
     const res = await fetch(apiURL)
     const apiResponse = await res.json()
     console.log(apiResponse);
