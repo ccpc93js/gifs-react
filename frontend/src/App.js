@@ -6,12 +6,14 @@ import Details from './screens/Detail';
 import Context from './context/StaticContext'
 import { GifsContextProvider } from './context/GIfsContext';
 
+
 function App() {
   return (
     <Context.Provider value={{
       name: 'ccpc',
       jsCode: true
     }}>
+
       <div className="App">
         <section className="App-content">
           <Link to="/">
@@ -28,11 +30,15 @@ function App() {
 
               <Route
                 component={SearchResults}
-                path="/search/:keyword"
+                path="/search/:keyword/:rating?"
               />
               <Route
                 component={Details}
                 path="/gif/:id"
+              />
+              <Route
+                component={() => <h1 style={{ textAlign: "center" }}>ERROR 404</h1>}
+                path="/404"
               />
             </GifsContextProvider>
           </div>
