@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import './style.css'
 import GifList from 'components/GifList'
 import useGifs from 'hooks/useGifs'

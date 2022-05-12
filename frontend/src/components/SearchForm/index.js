@@ -5,7 +5,7 @@ import useForm from './hook'
 const RATINGS = ['g', 'pg', 'pg-13', 'r']
 
 function SearchForm({ initialKeyword = '', initialRating }) {
-    const [path, pushLocation] = useLocation()
+    const [, pushLocation] = useLocation()
 
     // const [keyword, setKeyword] = useState(decodeURIComponent(initialKeyword))
 
